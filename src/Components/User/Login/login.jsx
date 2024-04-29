@@ -30,7 +30,7 @@ const Register = () => {
 
       setTimeout(() => {
         navigate("/dashboard");
-      }, 2000);
+      }, 4000);
     } catch (error) {
       console.error(error);
       toast.error("Failed to login");
