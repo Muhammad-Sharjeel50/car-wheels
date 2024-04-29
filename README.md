@@ -1,6 +1,16 @@
 Here's an updated version of your README file with the information you provided:
-
-```markdown
+# frontend project
+To run a # frontend project first of all use npm install in the terminal and start the project and also use env files as well 
+MONGODB_URI=mongodb://0.0.0.0:27017/carwheels
+EMAIL_USER =your email
+EMAIL_PASSWORD =your creds
+JWT_SECRET=1qaz2wsx3edc4rfv5tgb6yhn0okm9ijn8uhb7ygv
+ # for backend
+ go to the Backend directory 
+install dependency npm i or npm install
+then use npm start
+# for db
+mongodb is a database for db
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses Tailwind CSS for styling.
