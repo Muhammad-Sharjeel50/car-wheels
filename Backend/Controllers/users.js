@@ -64,9 +64,6 @@ const registerUser = async (req, res) => {
   }
 };
 
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const User = require('../models/User'); // Assuming User model is imported
 
 const loginUser = async (req, res) => {
   try {
@@ -77,9 +74,8 @@ const loginUser = async (req, res) => {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
 
-    // Compare the provided password with the hashed password in the database
-    const isPasswordMatch = await bcrypt.compare(password, user.password);
-    if (!isPasswordMatch) {
+    // Compare the provided password directly with the stored password (not recommended)
+    if (password !== user.password) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
 
@@ -92,6 +88,9 @@ const loginUser = async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 };
+
+module.exports = loginUser;
+
 
 module.exports = loginUser;
 
