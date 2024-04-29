@@ -45,7 +45,7 @@ const Register = () => {
       <ToastContainer />
       <div className="bg-blue-100 p-4">
         <h1 className="bg-gradient-to-r text-5xl text-center mt-4  text-transparent font-bold from-blue-500 to-purple-500 bg-clip-text">
-          HR FLOW SYSTEM
+          CAR WHEELS
         </h1>
       </div>
 
